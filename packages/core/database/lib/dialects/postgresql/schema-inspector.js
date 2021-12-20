@@ -8,6 +8,7 @@ const SQL_QUERIES = {
       table_schema = ?
       AND table_type = 'BASE TABLE'
       AND table_name != 'geometry_columns'
+      AND table_name != 'users'
       AND table_name != 'spatial_ref_sys';
   `,
   LIST_COLUMNS: /* sql */ `
