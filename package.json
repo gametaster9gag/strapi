@@ -31,6 +31,7 @@
     "setup": "yarn && yarn build",
     "watch": "lerna run --stream watch --no-private",
     "build": "lerna run --stream build --no-private",
+    "prepare": "npm run build",
     "generate": "plop --plopfile ./packages/generators/admin/plopfile.js",
     "lint": "npm-run-all -p lint:code lint:css",
     "lint:code": "eslint .",
